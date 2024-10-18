@@ -29,7 +29,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <div className='text-2xl text-right mr-4'>Logged in as <span className='text-blue-400 text-bold text-underline'>{dataContext.log.at(-1).email}</span></div>
+            <div className='text-2xl text-right mr-4'>Logged in as <span className='text-blue-400 text-bold text-underline'>{dataContext.log[dataContext.log.length - 1].email}</span></div>
             <LogTable />
             <div className='mx-auto w-fit mt-16'>
                 <Chart options={data.options}
