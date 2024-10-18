@@ -1,0 +1,36 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "exclude": [
+    "node_modules",
+    "!node_modules/@types",
+    "dist",
+    "lib"
+  ],
+  "compilerOptions": {
+    "types": [
+      "chrome"
+    ],
+    "baseUrl": "./",
+    "allowJs": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    "target": "ESNext",
+    "module": "ES2015",
+    "moduleResolution": "Bundler",
+    "lib": ["ESNext", "DOM"],
+    "sourceMap": true,
+
+  }
+}
