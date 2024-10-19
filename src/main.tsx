@@ -9,13 +9,13 @@ import './index.css'
 import Dashboard from './pages/Dashboard';
 
 const router = createBrowserRouter([{
-  path: '/',
+  path: '',
   element: <LoginPage />
 }, {
-  path: '/dashboard',
+  path: 'dashboard',
   element: <Dashboard />
 }
-], { basename: '/ecolux-test' })
+], { basename: window.location.pathname })
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
