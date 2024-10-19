@@ -12,10 +12,10 @@ const router = createBrowserRouter([{
   path: '/',
   element: <LoginPage />
 }, {
-  path: 'dashboard',
+  path: '/dashboard',
   element: <Dashboard />
 }
-])
+], { basename: '/ecolux-test' })
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
