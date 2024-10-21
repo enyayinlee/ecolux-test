@@ -30,6 +30,7 @@ export const LoginPage = () => {
     userTmp.current[target] = v
     setUser({ ...userTmp.current })
     setReset(false)
+    setErr({})
   }, 300)
 
   const onSubmit = () => {
